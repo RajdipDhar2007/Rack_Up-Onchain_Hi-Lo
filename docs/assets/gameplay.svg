@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-label="Animated walkthrough of one Hi-Lo round: draw, bet, reveal, payout">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1426"/><stop offset="1" stop-color="#171034"/></linearGradient>
+    <radialGradient id="shine" cx="35%" cy="30%" r="60%"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <style>
+      text{font-family:Verdana,Arial,sans-serif}
+      .s{opacity:0;animation:cycle 12s infinite}
+      .s2{animation-delay:3s}.s3{animation-delay:6s}.s4{animation-delay:9s}
+      @keyframes cycle{0%{opacity:0}4%,22%{opacity:1}27%,100%{opacity:0}}
+      .bar{transform-box:fill-box;transform-origin:left center;animation:bar 12s linear infinite}
+      @keyframes bar{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+      .pulse{animation:pulse .9s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes pulse{50%{transform:scale(1.08)}}
+    </style>
+  </defs>
+  <rect width="900" height="340" rx="18" fill="url(#bg)"/>
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#e8e8ff">One round in 12 seconds (the real thing gives you 60)</text>
+  <rect x="150" y="300" width="600" height="8" rx="4" fill="#26305a"/>
+  <rect class="bar" x="150" y="300" width="600" height="8" rx="4" fill="#ffd93d"/>
+
+  <g class="s">
+    <text x="450" y="95" text-anchor="middle" font-size="16" fill="#9aa4d6">1. Chainlink VRF draws a ball. Nobody can rig it.</text>
+    <g transform="translate(450,190)"><circle class="pulse" r="60" fill="#4d96ff"/><circle r="60" fill="url(#shine)"/><circle r="28" fill="#fff"/><text y="14" text-anchor="middle" font-size="40" font-weight="900" fill="#111">7</text></g>
+  </g>
+  <g class="s s2">
+    <text x="450" y="95" text-anchor="middle" font-size="16" fill="#9aa4d6">2. Will the next ball be higher or lower than 7?</text>
+    <g transform="translate(300,185)"><rect class="pulse" x="-110" y="-45" width="220" height="90" rx="16" fill="#1f9d55"/><text y="12" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">▲ HIGHER</text></g>
+    <g transform="translate(600,185)"><rect x="-110" y="-45" width="220" height="90" rx="16" fill="#d64545"/><text y="12" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">▼ LOWER</text></g>
+    <text x="450" y="265" text-anchor="middle" font-size="14" fill="#ffd93d">sweating intensifies...</text>
+  </g>
+  <g class="s s3">
+    <text x="450" y="95" text-anchor="middle" font-size="16" fill="#9aa4d6">3. The next ball drops...</text>
+    <g transform="translate(450,190)"><circle class="pulse" r="60" fill="#ff6b6b"/><circle r="60" fill="url(#shine)"/><circle r="28" fill="#fff"/><text y="14" text-anchor="middle" font-size="40" font-weight="900" fill="#111">12</text></g>
+    <text x="450" y="275" text-anchor="middle" font-size="18" font-weight="700" fill="#6bcb77">12 &gt; 7. Higher wins!</text>
+  </g>
+  <g class="s s4">
+    <text x="450" y="95" text-anchor="middle" font-size="16" fill="#9aa4d6">4. Winners split the pot. Losers are out.</text>
+    <text x="450" y="190" text-anchor="middle" font-size="56" font-weight="900" fill="#ffd93d">RACKED UP!</text>
+    <text x="450" y="245" text-anchor="middle" font-size="16" fill="#e8e8ff">Next round: do it all again. Don't blink.</text>
+  </g>
+</svg>

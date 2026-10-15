@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Rack Up: Onchain Hi-Lo, animated banner with bouncing pool balls">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1b0f3a"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd93d"><animate attributeName="stop-color" values="#ffd93d;#ff6b6b;#4d96ff;#6bcb77;#ffd93d" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#4d96ff"><animate attributeName="stop-color" values="#4d96ff;#6bcb77;#ffd93d;#ff6b6b;#4d96ff" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <radialGradient id="shine" cx="35%" cy="30%" r="60%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+  <g fill="#fff" opacity=".7">
+    <circle cx="60" cy="40" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="25" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="50" r="1.6"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="35" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="220" r="1.3"><animate attributeName="opacity" values=".2;1;.2" dur="3.4s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="450" y="105" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="64" font-weight="900" fill="url(#title)">RACK UP</text>
+  <text x="450" y="145" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="24" font-weight="700" fill="#e8e8ff">Onchain Hi-Lo  ·  Higher or Lower?</text>
+  <text x="450" y="172" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="14" fill="#9aa4d6">One wrong guess and you are out. Last ones standing split the pot.</text>
+  <g font-family="Verdana,Arial,sans-serif" font-weight="800" font-size="20" text-anchor="middle">
+    <g transform="translate(150,215)"><g><animateTransform attributeName="transform" type="translate" values="0,0;0,-34;0,0" dur="1.2s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".3 0 .7 1;.3 0 .7 1"/>
+      <circle r="22" fill="#ffd93d"/><circle r="22" fill="url(#shine)"/><circle r="10" fill="#fff"/><text y="5" fill="#111" font-size="13">1</text></g></g>
+    <g transform="translate(300,215)"><g><animateTransform attributeName="transform" type="translate" values="0,0;0,-34;0,0" dur="1.2s" begin=".2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".3 0 .7 1;.3 0 .7 1"/>
+      <circle r="22" fill="#4d96ff"/><circle r="22" fill="url(#shine)"/><circle r="10" fill="#fff"/><text y="5" fill="#111" font-size="13">2</text></g></g>
+    <g transform="translate(450,215)"><g><animateTransform attributeName="transform" type="translate" values="0,0;0,-34;0,0" dur="1.2s" begin=".4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".3 0 .7 1;.3 0 .7 1"/>
+      <circle r="22" fill="#ff6b6b"/><circle r="22" fill="url(#shine)"/><circle r="10" fill="#fff"/><text y="5" fill="#111" font-size="13">3</text></g></g>
+    <g transform="translate(600,215)"><g><animateTransform attributeName="transform" type="translate" values="0,0;0,-34;0,0" dur="1.2s" begin=".6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".3 0 .7 1;.3 0 .7 1"/>
+      <circle r="22" fill="#8e5cf7"/><circle r="22" fill="url(#shine)"/><circle r="10" fill="#fff"/><text y="5" fill="#111" font-size="13">8</text></g></g>
+    <g transform="translate(750,215)"><g><animateTransform attributeName="transform" type="translate" values="0,0;0,-34;0,0" dur="1.2s" begin=".8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".3 0 .7 1;.3 0 .7 1"/>
+      <circle r="22" fill="#6bcb77"/><circle r="22" fill="url(#shine)"/><circle r="10" fill="#fff"/><text y="5" fill="#111" font-size="13">15</text></g></g>
+  </g>
+</svg>
